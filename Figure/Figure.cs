@@ -21,7 +21,13 @@ namespace Figure
             protected set => color=value; 
         }
 
-        public abstract Double Area();
-        public abstract Double Perimeter();
+        public abstract Double Area
+        {
+            get;
+        }
+        public abstract Double Perimeter
+        {
+            get;
+        }
     }
 }

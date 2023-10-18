@@ -12,10 +12,15 @@ namespace Figure
         {
             Rectangle rectangle = new Rectangle("Blue", 2.4, 5.0);
 
-            Console.WriteLine(rectangle.Area());
-            Console.WriteLine(rectangle.Perimeter());
+            Console.WriteLine(rectangle.Area);
+            Console.WriteLine(rectangle.Perimeter);
 
-            //to jest test
+            Circle circle= new Circle("Red", 1);
+
+            Console.WriteLine(circle.Area);
+            Console.WriteLine(circle.Perimeter);
+
+            Console.WriteLine(circle);
         }
     }
 }

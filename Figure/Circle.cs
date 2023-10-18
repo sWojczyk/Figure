@@ -6,26 +6,24 @@ using System.Threading.Tasks;
 
 namespace Figure
 {
-    class Rectangle : Figure
+    class Circle : Figure
     {
-        private Double width;
-        private Double height;
-
-        public Rectangle(String color, Double width, Double height)
+        private Double radius;
+        
+        public Circle(String color, Double radius)
                             : base(color)
         {
-            this.width = width;
-            this.height = height;
+            this.radius = radius;
         }
 
         public override double Area
         {
-            get => width * height;
+            get => Math.PI * Math.Pow(radius, 2);
         }
 
         public override double Perimeter
         {
-            get => 2*(width + height);
+            get => 2 * Math.PI * radius;
         }
     }
 }
