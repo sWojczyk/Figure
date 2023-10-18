@@ -23,9 +23,13 @@ namespace Figure
             get => width * height;
         }
 
-        public override double Perimeter
+        public override Double Perimeter
         {
             get => 2*(width + height);
+        }
+        public override string ToString()
+        {
+            return $"Prostokąt o wymiarach {width}x{height}\n" + base.ToString();
         }
     }
 }

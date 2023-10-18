@@ -9,7 +9,7 @@ namespace Figure
     class Circle : Figure
     {
         private Double radius;
-        
+
         public Circle(String color, Double radius)
                             : base(color)
         {
@@ -24,6 +24,26 @@ namespace Figure
         public override double Perimeter
         {
             get => 2 * Math.PI * radius;
+        }
+
+        public static Circle FromString(string str)
+        {
+            string[] args = str.Split(' ');
+
+            if (Double.TryParse(args[1], out Double radius))
+            {
+                return new Circle(args[0], radius);
+            }
+            else
+            {
+                //return new Circle(args[0], 0);
+                return null;
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"Koło o promieniu {radius}\n" + base.ToString();
         }
     }
 }

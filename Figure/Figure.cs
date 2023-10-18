@@ -16,9 +16,9 @@ namespace Figure
         }
 
         public string Color
-        { 
-            get => color; 
-            protected set => color=value; 
+        {
+            get => color;
+            protected set => color=value;
         }
 
         public abstract Double Area
@@ -28,6 +28,10 @@ namespace Figure
         public abstract Double Perimeter
         {
             get;
+        }
+        public override string ToString()
+        {
+            return $"Kolor \"{Color}\" \nPole {Area}\nObwód {Perimeter}";
         }
     }
 }
