@@ -10,7 +10,7 @@ namespace Figure
     {
         static void Main(string[] args)
         {
-            Rectangle rectangle = new Rectangle("Red", 2.4, 5.0);
+            Rectangle rectangle = new Rectangle("Blue", 2.4, 5.0);
 
             Console.WriteLine(rectangle.Area());
             Console.WriteLine(rectangle.Perimeter());
