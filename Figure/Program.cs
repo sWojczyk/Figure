@@ -14,6 +14,8 @@ namespace Figure
 
             Console.WriteLine(rectangle.Area());
             Console.WriteLine(rectangle.Perimeter());
+
+            //to jest test
         }
     }
 }
